@@ -1,0 +1,6 @@
+<div class="container" style="padding-top: 30px;">
+    <ul class="list-group">
+        <li class="list-group-item" *ngFor="let pelicula of peliculas, let i = index" (click)="verDetallePelicula(i)">
+            <h6>{{ pelicula.nombre }}</h6> Año: {{ pelicula.anio }}</li>
+    </ul>
+</div>
